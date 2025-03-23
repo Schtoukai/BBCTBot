@@ -2,6 +2,7 @@ import os
 import discord 
 from dotenv import load_dotenv
 from discord.ext import commands
+from keep_alive import keep_alive
 
 load_dotenv()
 
@@ -16,4 +17,5 @@ async def infoContext(ctx):
     await ctx.send("Info Context !")
 
 discordToken = os.getenv('DISCORD_BOT_TOKEN')
+keep_alive()
 bot.run(discordToken)
