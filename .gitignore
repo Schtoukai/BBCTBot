@@ -1,2 +1,2 @@
 .env
-_py_cache_/
+__pycache__/
